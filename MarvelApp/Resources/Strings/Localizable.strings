@@ -1,0 +1,18 @@
+
+// MARK: - PopUp Internet
+"messageOffline" = "No hay conexión. Por favor, revisa si estas conectado a la red.";
+"buttonOffline" = "Entendido";
+
+// MARK: - Home View
+"placeholderSearchCharacter" = "Buscar personaje...";
+
+// MARK: - Arena View
+"placeholderSearchFighter" = "Buscar luchador...";
+"buttonFight" = "LUCHAR";
+
+// MARK: - PopUp Fight Result
+"winnerText" = " gana!";
+"backButton" = "Volver";
+
+// MARK: - Ranking View
+"pointsPower" = " puntos";
