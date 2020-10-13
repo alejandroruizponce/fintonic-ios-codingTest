@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BentonSans-Black-Regular.otf">
+            <string>BentonSansExtraComp-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArenaViewController" customModule="MarvelApp" customModuleProvider="target">
+            <connections>
+                <outlet property="fightButton" destination="ffw-xs-Jjb" id="wqR-l5-Fqr"/>
+                <outlet property="firstFightersView" destination="277-PD-xfk" id="hUf-HR-SxY"/>
+                <outlet property="secondFightersView" destination="aX0-kb-S2v" id="o5d-FX-ay0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MrK-Ed-PDo">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MX0-bG-WH9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARENA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-U1-guO">
+                                    <rect key="frame" x="19.999999999999996" y="20" width="62.666666666666657" height="41"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="41" id="yRR-9p-I6s"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="BentonSansExtraComp-Black" family="BentonSans ExtraComp Black" pointSize="33"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="277-PD-xfk" customClass="FightersView" customModule="MarvelApp" customModuleProvider="target">
+                                    <rect key="frame" x="34" y="77" width="346" height="220"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="220" id="44D-pJ-GU7"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aX0-kb-S2v" customClass="FightersView" customModule="MarvelApp" customModuleProvider="target">
+                                    <rect key="frame" x="34" y="357" width="346" height="220"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="220" id="AbT-tk-8UH"/>
+                                    </constraints>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="versusIcon" translatesAutoresizingMaskIntoConstraints="NO" id="B7P-bW-CXg">
+                                    <rect key="frame" x="184" y="297" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="B7P-bW-CXg" secondAttribute="height" multiplier="1:1" id="BiO-uO-Jif"/>
+                                        <constraint firstAttribute="height" constant="60" id="Z9U-Ib-GIY"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffw-xs-Jjb">
+                                    <rect key="frame" x="106" y="609" width="203" height="45"/>
+                                    <color key="backgroundColor" red="0.16078431369999999" green="0.1647058824" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="QmQ-T6-Eh7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                    <state key="normal" title="¡A LUCHAR!">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tapFightButton:" destination="-1" eventType="touchUpInside" id="2gT-aF-BrY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="aX0-kb-S2v" firstAttribute="leading" secondItem="MX0-bG-WH9" secondAttribute="leading" constant="34" id="2FF-tM-K68"/>
+                                <constraint firstAttribute="trailing" secondItem="aX0-kb-S2v" secondAttribute="trailing" constant="34" id="3eF-iE-M4v"/>
+                                <constraint firstItem="ffw-xs-Jjb" firstAttribute="leading" secondItem="MX0-bG-WH9" secondAttribute="leading" constant="106" id="4jt-UF-Q8c"/>
+                                <constraint firstAttribute="trailing" secondItem="277-PD-xfk" secondAttribute="trailing" constant="34" id="AfM-oE-R1W"/>
+                                <constraint firstItem="277-PD-xfk" firstAttribute="leading" secondItem="MX0-bG-WH9" secondAttribute="leading" constant="34" id="Gjz-Vm-HkV"/>
+                                <constraint firstAttribute="height" constant="736" id="MGR-pN-CbO"/>
+                                <constraint firstItem="277-PD-xfk" firstAttribute="top" secondItem="MgK-U1-guO" secondAttribute="bottom" constant="16" id="O8n-RV-eyc"/>
+                                <constraint firstItem="MgK-U1-guO" firstAttribute="top" secondItem="MX0-bG-WH9" secondAttribute="top" constant="20" id="PjI-Dc-5hW"/>
+                                <constraint firstAttribute="trailing" secondItem="ffw-xs-Jjb" secondAttribute="trailing" constant="105" id="Qej-oN-GsZ"/>
+                                <constraint firstItem="aX0-kb-S2v" firstAttribute="top" secondItem="B7P-bW-CXg" secondAttribute="bottom" id="SPQ-am-tgo"/>
+                                <constraint firstItem="MgK-U1-guO" firstAttribute="leading" secondItem="MX0-bG-WH9" secondAttribute="leading" constant="20" id="TVh-TL-GdM"/>
+                                <constraint firstItem="ffw-xs-Jjb" firstAttribute="top" secondItem="aX0-kb-S2v" secondAttribute="bottom" constant="32" id="WWT-se-80U"/>
+                                <constraint firstItem="B7P-bW-CXg" firstAttribute="top" secondItem="277-PD-xfk" secondAttribute="bottom" id="siG-7P-I0m"/>
+                                <constraint firstItem="B7P-bW-CXg" firstAttribute="centerX" secondItem="MX0-bG-WH9" secondAttribute="centerX" constant="7" id="utB-ws-ZiX"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="MX0-bG-WH9" secondAttribute="bottom" id="YNn-3m-Dji"/>
+                        <constraint firstItem="MX0-bG-WH9" firstAttribute="top" secondItem="MrK-Ed-PDo" secondAttribute="top" id="f9p-cS-NO3"/>
+                        <constraint firstItem="MX0-bG-WH9" firstAttribute="width" secondItem="MrK-Ed-PDo" secondAttribute="width" id="nKi-qm-VbQ"/>
+                        <constraint firstAttribute="trailing" secondItem="MX0-bG-WH9" secondAttribute="trailing" id="y5z-HD-jfD"/>
+                        <constraint firstItem="MX0-bG-WH9" firstAttribute="leading" secondItem="MrK-Ed-PDo" secondAttribute="leading" id="zZz-Sd-zG9"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MrK-Ed-PDo" firstAttribute="trailing" secondItem="mEJ-0g-eVj" secondAttribute="trailing" id="bwJ-Im-OXN"/>
+                <constraint firstItem="MrK-Ed-PDo" firstAttribute="leading" secondItem="mEJ-0g-eVj" secondAttribute="leading" id="c1q-4J-cV2"/>
+                <constraint firstItem="MrK-Ed-PDo" firstAttribute="bottom" secondItem="mEJ-0g-eVj" secondAttribute="bottom" id="cCo-zf-ULx"/>
+                <constraint firstItem="MrK-Ed-PDo" firstAttribute="top" secondItem="mEJ-0g-eVj" secondAttribute="top" id="raF-Km-tsX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="mEJ-0g-eVj"/>
+            <point key="canvasLocation" x="131.8840579710145" y="131.25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="versusIcon" width="96" height="96"/>
+    </resources>
+</document>

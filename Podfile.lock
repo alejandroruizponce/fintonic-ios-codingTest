@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.0.4)
+  - IQKeyboardManagerSwift (6.5.5)
+  - lottie-ios (3.1.8)
+  - Nuke (8.4.1)
+  - SnapKit (5.0.1)
+  - SwiftPopup (5.0.0):
+    - SnapKit (~> 5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - lottie-ios
+  - Nuke
+  - SwiftPopup
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - lottie-ios
+    - Nuke
+    - SnapKit
+    - SwiftPopup
+
+SPEC CHECKSUMS:
+  Alamofire: 0fe5fd24b4298dc377a6550da7d5f1b30e286fcb
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  Nuke: d780e3507a86b86c589ab3cc5cd302d5456f06fb
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftPopup: 31874508c0d91788edf71419a5bbeb3ebd498ab9
+
+PODFILE CHECKSUM: 94b053c5d071c74efed40c54adbdba5064273793
+
+COCOAPODS: 1.8.4
